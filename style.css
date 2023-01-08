@@ -1,0 +1,270 @@
+* {
+  color: #bbb;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 110px;
+  height: 110px;
+  padding-right: 20px;
+}
+
+.name-group {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
+.name {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 4px;
+  font-size: 50px;
+  color: #bbb;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.sub-name {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 4px;
+  font-size: 18px;
+  color: #bbb;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(assets/background.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  letter-spacing: 3px;
+}
+header .home {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .home .welcome {
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  font-weight: 300;
+  color: #d3ab55;
+  margin-bottom: 40px;
+}
+header .home .sub-welcome {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 4px;
+}
+header .home p {
+  font-size: 40px;
+  margin-bottom: 30px;
+  width: 100vw;
+  text-align: center;
+  font-weight: 300;
+}
+header .home button {
+  width: 170px;
+  height: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d3ab55;
+  background-color: transparent;
+  border: 1px solid #d3ab55;
+  outline: none;
+}
+header .home button:hover {
+  cursor: pointer;
+  transition: all 0.4s;
+  background-color: #d3ab55;
+  color: black;
+}
+
+.about-us {
+  background-color: rgb(38, 38, 38);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+.about-us .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+.about-us .description .about {
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  font-weight: 300;
+  color: #d3ab55;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.about-us .description .intro {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 4px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #bbb;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.about-us .description p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #bbb;
+  text-align: justify;
+}
+.about-us .description .stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about-us .description .stars i {
+  padding: 30px 5px;
+  font-size: 16px;
+  color: #d3ab55;
+}
+.about-us .description button {
+  width: 170px;
+  height: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d3ab55;
+  background-color: transparent;
+  border: 1px solid #d3ab55;
+  outline: none;
+}
+.about-us .description button:hover {
+  cursor: pointer;
+  transition: all 0.4s;
+  background-color: #d3ab55;
+  color: black;
+}
+.about-us img {
+  margin-left: -100px;
+  width: 30%;
+  opacity: 0.7;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .card {
+  width: 33.3333%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+}
+.cards .card .card-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgba(211, 171, 85, 0.6);
+  color: #fff;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: left 0.7s;
+  width: 100%;
+  height: 100%;
+}
+.cards .card .card-overlay .item-name {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 4px;
+  color: rgb(38, 38, 38);
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.cards .card .card-overlay .price {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 4px;
+  color: rgb(38, 38, 38);
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.cards .card .card-overlay .btn-order {
+  width: 150px;
+  height: 40px;
+  color: #d3ab55;
+  background-color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #d3ab55;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
+.cards .card img {
+  opacity: 0.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  width: 100%;
+  height: 100%;
+}
+.cards .card:hover .card-overlay {
+  left: 0;
+}
+
+footer {
+  background-color: rgb(38, 38, 38);
+  padding: 70px 0;
+}
+footer .title,
+footer .social-media {
+  margin-bottom: 70px;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .social-media i {
+  font-size: 50px;
+  padding: 0 15px;
+}
+footer .social-media i:hover {
+  color: #d3ab55;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+footer p {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 3px;
+}/*# sourceMappingURL=style.css.map */
